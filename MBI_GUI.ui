@@ -350,65 +350,99 @@
      <string>Test Pixels</string>
     </property>
    </widget>
-   <widget class="MPLWidget" name="mplimg1" native="true">
+   <widget class="MPLImage" name="mplimg1" native="true">
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>30</y>
-      <width>750</width>
-      <height>700</height>
+      <y>70</y>
+      <width>736</width>
+      <height>640</height>
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
-   <widget class="MPLWidget" name="mplimg2" native="true">
+   <widget class="MPLImage" name="mplimg2" native="true">
     <property name="geometry">
      <rect>
       <x>1140</x>
-      <y>30</y>
-      <width>750</width>
-      <height>700</height>
+      <y>70</y>
+      <width>736</width>
+      <height>640</height>
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
-   <widget class="MPLWidget" name="mplhist1" native="true">
+   <widget class="MPLHist" name="mplhist1" native="true">
     <property name="geometry">
      <rect>
       <x>370</x>
       <y>750</y>
-      <width>751</width>
+      <width>736</width>
       <height>301</height>
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
+    <zorder>mplimg1</zorder>
+    <zorder>mplimg1</zorder>
    </widget>
-   <widget class="MPLWidget" name="mplhist2" native="true">
+   <widget class="MPLHist" name="mplhist2" native="true">
     <property name="geometry">
      <rect>
       <x>1140</x>
       <y>750</y>
-      <width>751</width>
+      <width>736</width>
       <height>301</height>
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>40</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Figure 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>40</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Figure 2</string>
     </property>
    </widget>
   </widget>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>MPLWidget</class>
+   <class>MPLImage</class>
    <extends>QWidget</extends>
-   <header location="global">mplwidget.h</header>
+   <header>mplimage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MPLHist</class>
+   <extends>QWidget</extends>
+   <header location="global">mplhist.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
